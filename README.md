@@ -1,5 +1,5 @@
 # Личный проект Sedona
-* Студент: [{{Zlata}}]({{https://htmlacademy.ru/profile/id2688611}}).
+* Студент: [{Zlata}]({{https://htmlacademy.ru/profile/id2688611}}).
 
 
 ---
