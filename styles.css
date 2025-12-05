@@ -1,0 +1,18 @@
+.welcome {
+    background-image:  url(images/main-pic/index-background.jpg);
+    background-size: cover;
+}
+
+.decor {
+    display: inline;
+    text-align: center;
+}
+
+subscribe-background {
+    background-image: url(images/subscribe-background.jpg);
+    background-size: cover;
+}
+.hotels {
+    background-image: url(images/Фильтр.jpg);
+    background-size: cover;
+}
