@@ -79,6 +79,7 @@ body {
     font-weight: 700;
     line-height: 36px;
     text-transform: uppercase;
+    margin-top: 95px;
     margin-bottom: 0;
 }
 .intro-small-text {
@@ -95,15 +96,49 @@ body {
 }
 .reasons-list, .advantages-list {
     text-align: center;
+    margin-top: 95px;
 }
-.reasons-title .advantages-title {
+.reasons-title, .advantages-title {
     font-family: "PT Sans", sans-serif;
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
-    color:#FFFFFF;
+}
+.advantages-list {
+    display: flex;
+    justify-content: space-between;
+}
+.advantages-item {
+    width: 400px;
+    height: 385px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
 }
 
+.reasons-item {
+    width: 400px;
+    height: 385px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.blue-square {
+    background-color: #82B3D3;
+    color: white;
+}
+.light-blue-square {
+    background-color: rgba(131,179,211,0.2);
+    color:black;
+}
+.lightlight-blue-square {
+    background-color: rgba(131,179,211,0.12);
+    color:black;
+}
 .button {
     font-family: "PT Sans";
     font-size: 20px;
@@ -139,7 +174,6 @@ body {
     gap: 0;
     width: 100%;
 }
-
 .email-input {
     width: 452px;
     height: 25px;
@@ -165,10 +199,17 @@ body {
     justify-content: space-between;
     width: 142px;
 }
-.telephone {
+.telephone a{
     display: flex;
     align-items: start;
     justify-content: center;
+    font-family: "PT Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 40px;
+    text-decoration: none;
+    color: black;
 }
 .htmlacademy {
     display: flex;
