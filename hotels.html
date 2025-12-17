@@ -10,14 +10,15 @@
 <body>
   <header class="page-header">
     <nav class="navigation">
+      <div class="header-wrapper">
       <img class="logo" alt="logo-sedona" src="images/header/logo.svg">
       <ul class="navigation-list">
-        <li class="navigation-item"><a class="navigation-link-current" href="index.html">Главная</a></li>
+        <li class="navigation-item"><a class="navigation-link" href="index.html">Главная</a></li>
         <li class="navigation-item"><a class="navigation-link" href="#about-sedona">О Седоне</a></li>
-        <li class="navigation-item"><a class="navigation-link" href="hotels.html">Гостиницы</a></li>
+        <li class="navigation-item"><a class="navigation-link-current" href="hotels.html">Гостиницы</a></li>
       </ul>
       <ul class="navigation-list navigation-user">
-        <li class="navigation-item"><button class="main" type="button"><img src="images/header/Поиск.svg">
+        <li class="navigation-item"><button class="search" type="button"><img src="images/header/Поиск.svg">
             <span class="visually-hidden">Поиск</span>
         </button>
         </li>
@@ -27,6 +28,7 @@
         </li>
         <li class="navigation-item"><a class="button button-brown" href="#">Хочу сюда!</a>
       </ul>
+      </div>
     </nav>
   </header>
   <main class="main-inner">
@@ -79,9 +81,16 @@
               </label>
             </li>
           </ul>
+        </fieldset>
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-group-title">Стоимость, ₽</legend>
+          <input type="number" value="0">
+          <input type="number" value="9000">
+          <!--range slider-->
+          </fieldset>
           <button class="button button-blue-filter" type="submit">Применить</button>
           <button class="button button-transparent" type="button">Сбросить</button>
-        </fieldset>
+
       </form>
       </div>
       <p class="search">Найдено гостиниц:</p>
@@ -224,6 +233,7 @@
         <button class="button button-blue" type="submit">Подписаться</button>
       </form>
     </section>
+    <div class="footer-wrapper">
     <section class="footer-contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <ul class="footer-contacts-list">
@@ -253,9 +263,10 @@
     </section>
     <section class="htmlacademy">
       <a class="profile-developer" href="https://github.com/Golldiie">
-        <img class="footer-contacts-logo" src="images/footer/logo_htmlacademy.svg" alt="Логотип htmlacademy, ведущий на профиль разработчика сайта">
+        <img class="footer-contacts-logo" src="images/footer/logo_htmlacademy.svg" alt="Логотип htmlacademy, ведущий на профиль разработчика сайта" width="115px" height="33px">
       </a>
     </section>
+   </div>
   </footer>
 </body>
 

@@ -6,18 +6,19 @@
   <title>Туристический город Седона</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-
+<!--Поиграть с ::before ::after -->
 <body>
   <header class="page-header">
     <nav class="navigation">
+      <div class="header-wrapper">
       <img class="logo" alt="logo-sedona" src="images/header/logo.svg">
       <ul class="navigation-list">
-        <li class="navigation-item"><a class="navigation-link-current" href="main.html">Главная</a></li>
+        <li class="navigation-item"><a class="navigation-link-current" href="index.html">Главная</a></li>
         <li class="navigation-item"><a class="navigation-link" href="#about-sedona">О Седоне</a></li>
         <li class="navigation-item"><a class="navigation-link" href="hotels.html">Гостиницы</a></li>
       </ul>
       <ul class="navigation-list navigation-user">
-        <li class="navigation-item"><button class="main" type="button"><img src="images/header/Поиск.svg">
+        <li class="navigation-item"><button class="search" type="button"><img src="images/header/Поиск.svg">
             <span class="visually-hidden">Поиск</span>
         </button>
         </li>
@@ -27,11 +28,12 @@
         </li>
         <li class="navigation-item"><a class="button button-brown" href="#">Хочу сюда!</a>
       </ul>
+      </div>
     </nav>
   </header>
   <main>
     <div class="welcome">
-
+      <!--Переделать сетку: убрать лишние классы, а в css сделать через nth-of-type + only-child(?)-->
       <img class="decor-welcome" src="images/main-pic/welcome.svg" alt="Добро пожаловать" width="187.7px"; height="44.7px";><br>
        <img class="welcome-welcome" src="images/main-pic/gorgeous.svg" alt="В очаровательную" width="256px" height="28.78px"><br>
       <img class="decor-welcome" src="images/main-pic/sedona.svg" alt="Седону!" width="456.7" height="212.77"><br>
@@ -46,13 +48,13 @@
       <h2 class="visually-hidden">Причины поехать</h2>
       <ul class="reasons-list">
         <li class="reasons-item blue-square">
-          <h3 class="reasons-title" id="about-sedona">Настоящий городок</h3>
+          <h3 class="reasons-title title-white" id="about-sedona">Настоящий городок</h3>
           <p class="reasons-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
         </li>
-        <li class="reasons">
+        <li class="reasons-item">
           <img src="images/photo-1.jpg" alt="Бар Седоны" width="800" height="385">
         </li>
-        <li class="reasons-item lightlight-blue-square">
+        <li class="reasons-item">
           <h3 class="reasons-title">Небольшая площадь</h3>
           <p class="reasons-description">Все достопримечательности находятся очень близко</p>
         </li>
@@ -60,7 +62,7 @@
           <h3 class="reasons-title">Красивая дорога</h3>
           <p class="reasons-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
-        <li class="reasons-item lightlight-blue-square">
+        <li class="reasons-item">
           <h3 class="reasons-title">Мало туристов</h3>
           <p class="reasons-description">Большинство едет в Гранд Каньон и толпится там</p>
         </li>
@@ -68,7 +70,7 @@
           <img src="images/photo-2.jpg" alt="Пейзаж Седоны" width="800" height="385">
         </li>
         <li class="reasons-item blue-square">
-          <h3 class="reasons-title">Мост дьявола!</h3>
+          <h3 class="reasons-title title-white">Мост дьявола!</h3>
           <p class="reasons-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
         </li>
       </ul>
@@ -77,23 +79,26 @@
       <p class="intro-big-text">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</p>
       <p class="intro-small-text">Опытный персонал и качественное обслуживание</p>
     </section>
-    <section class="advantages-list">
+    <!--Переделать сетку: убрать лишние классы, а в css сделать через nth-of-type-->
+    <section class="advantages">
       <h2 class="visually-hidden">Что мы предлагаем</h2>
-      <div class="lightlight-blue-square advantages-item ">
+      <ul class="advantages-list">
+      <li class="advantages-item ">
         <img src="images/Advantage-icon-house.svg" alt="Дом" width="75px" height="72px">
         <h3 class="advantages-title">Жильё</h3>
         <p class="advantages-description">Рекомендуем пожить в настоящем мотеле, всё как в кино</p>
-      </div>
-      <div class="advantages-item ">
+      </li>
+      <li class="advantages-item">
         <img src="images/Advantage-icon-ham.svg" alt="Гамбургер" width="75px" height="72px">
         <h3 class="advantages-title">Еда</h3>
         <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь</p>
-      </div>
-      <div class="lightlight-blue-square advantages-item ">
+      </li>
+      <li class="advantages-item">
         <img src="images/Advantage-icon-gift.svg" alt="Подарок" width="75px" height="72px">
         <h3 class="advantages-title">Сувениры</h3>
         <p class="advantages-description">Не только китайского, но и настоящего местного производства</p>
-      </div>
+      </li>
+      </ul>
     </section>
     <section class="introduction-hotels">
       <p class="intro-big-text">Заинтересовались?</p>
@@ -114,6 +119,7 @@
         <button class="button button-blue" type="submit">Подписаться</button>
       </form>
     </section>
+    <div class="footer-wrapper">
     <section class="footer-contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <ul class="footer-contacts-list">
@@ -143,9 +149,10 @@
     </section>
     <section class="htmlacademy">
       <a class="profile-developer" href="https://github.com/Golldiie">
-        <img class="footer-contacts-logo" src="images/footer/logo_htmlacademy.svg" alt="Логотип htmlacademy, ведущий на профиль разработчика сайта">
+        <img class="footer-contacts-logo" src="images/footer/logo_htmlacademy.svg" alt="Логотип htmlacademy, ведущий на профиль разработчика сайта" width="115px" height="33px">
       </a>
     </section>
+   </div>
   </footer>
 </body>
 

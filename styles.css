@@ -5,11 +5,13 @@
     src: url("../sedona/fonts/ptsans-400.woff2") format("woff2");
     font-display: swap;
 }
+
 @font-face {
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
     src: url("../sedona/fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
 }
 
 body {
@@ -19,32 +21,87 @@ body {
     font-size: 18px;
     line-height: 21px;
 }
+
 ul {
-  list-style-type: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
+
 .page-header {
     background-color: #FFFFFF;
     color: black;
 }
-.navigation-link, .navigation-link-current {
-    font-family: "PT Sans", sans-serif;
+
+.logo {
+    display: block;
+    width: 140px;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0 70px;
+}
+
+.navigation-link,
+.navigation-link-current {
+    font-family: inherit;
     font-weight: 700;
     text-align: center;
     background-color: #FFFFFF;
-    color:black;
+    color: black;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0 10px;
+
 }
+
+.navigation-link-current {
+    border-bottom: 2px solid #756257;
+}
+
+.navigation-list {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-user {
+    display: flex;
+    margin-left: auto;
+    gap: 20px;
+    align-items: center;
+}
+
+.search {
+    background-color: #FFFFFF;
+    border: none;
+    height: 30px;
+}
+
 .button-brown {
     background-color: #756157;
     color: #FFFFFF;
     border-radius: 4px;
+    width: 160px;
+    font-size: 16px;
+    line-height: 20px;
+    height: 36px;
+    padding: 8px 16px;
 }
+
 .welcome {
-    background-image:  url(images/main-pic/index-background.jpg);
+    background-image: url(images/main-pic/index-background.jpg);
     background-size: cover;
-    width: 100%;
-    min-height: 485px;
     background-position: center;
+    width: 100%;
+    height: 485px;
     background-repeat: no-repeat;
 }
 
@@ -66,25 +123,30 @@ ul {
     width: 100%;
     height: 414.86px;
 }
+
 .hotels {
     background-image: url(images/Фильтр.jpg);
     background-size: cover;
     background-color: #82B3D3;
     padding: 35px 70px 70px 70px;
 }
+
 .breadcrumbs-link {
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
+
 .catalog-filter-group-title {
-    font-family: "PT Sans";
+    font-family: inherit;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
+
 .catalog-filter-item {
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
+
 .hotel-card {
     width: 340px;
     height: 438px;
@@ -92,89 +154,121 @@ ul {
     border-radius: 4px;
     padding: 20px;
 }
+
 .hotel-card-image {
     display: block;
     margin: 0 auto;
 }
+
 .hotel-link {
     color: black;
     text-decoration: none;
 }
+
 .hotel-card-title {
-    font-family: "PT Sans", sans-serif;
+    font-family: inherit;
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
     color: black;
     text-decoration: none;
 }
+
 .pagination {
     display: flex;
     flex-direction: row;
 }
+
 .pagination-item {
-  width: 60px;
-  height: 60px;
-  background-color: #82B3D3;
-  border-radius: 4px;
-  margin-right: 8px;
-  display:flex;
-  align-items: center;
-  justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #82B3D3;
+    border-radius: 4px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .pagination-link {
-    font-family: "PT Sans", sans-serif;
+    font-family: inherit;
     font-size: 20px;
     font-weight: 700;
     line-height: 36px;
     color: #FFFFFF;
     text-decoration: none;
 }
+
 .pagination-link-current {
-   color: black;
+    color: black;
 }
+
 .divider {
     width: 100%;
     display: block;
     margin-top: -72px;
 }
+
 .intro-big-text {
     text-align: center;
-    font-family: "PT Sans";
+    font-family: inherit;
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
     text-transform: uppercase;
-    margin-top: 95px;
-    margin-bottom: 0;
+    margin: 0;
 }
+
 .intro-small-text {
     text-align: center;
-    font-family: "PT Sans";
+    font-family: inherit;
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
     color: #333333;
-    margin-bottom: 0;
+    margin: 0;
+    padding: 20px;
 }
+
 .white {
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
-.reasons-list, .advantages-list {
+
+.reasons-list,
+.advantages-list {
     text-align: center;
-    margin-top: 95px;
 }
-.reasons-title, .advantages-title {
-    font-family: "PT Sans", sans-serif;
+
+.reasons-title,
+.advantages-title {
+    font-family: inherit;
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
+    padding: 8px 16px;
 }
+.reasons-title::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 60px;
+    margin: 30px auto 0;
+    background-color: rgba(0,0,0,0.3);
+}
+.title-white::after {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.reasons-description {
+    width: 230px;
+}
+
 .advantages-list {
     display: flex;
     justify-content: space-between;
 }
-.advantages-item {
+
+.advantages-item,
+.reasons-item {
     width: 400px;
     height: 385px;
     padding: 30px;
@@ -185,28 +279,25 @@ ul {
     margin-bottom: 0;
 }
 
-.reasons-item {
-    width: 400px;
-    height: 385px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.blue-square {
+.reasons-list li:first-of-type,
+.reasons-list li:last-of-type {
     background-color: #82B3D3;
     color: white;
 }
+
 .light-blue-square {
-    background-color: rgba(131,179,211,0.2);
-    color:black;
+    background-color: rgba(131, 179, 211, 0.2);
+    color: black;
 }
-.lightlight-blue-square {
-    background-color: rgba(131,179,211,0.12);
-    color:black;
+
+.reasons-list li:nth-of-type(odd):not(:first-of-type):not(:last-of-type),
+.advantages-list li:nth-of-type(odd){
+    background-color: rgba(131, 179, 211, 0.12);
+    color: black;
 }
+
 .button {
-    font-family: "PT Sans";
+    font-family: inherit;
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
@@ -215,6 +306,7 @@ ul {
     cursor: pointer;
     text-decoration: none;
 }
+
 .button-brown-search {
     background-color: #756157;
     color: #FFFFFF;
@@ -223,16 +315,19 @@ ul {
     box-sizing: border-box;
     margin: 55px auto 95px;
 }
+
 .introduction-hotels {
-  text-align: center;
-  margin: 0 auto;
+    text-align: center;
+    margin: 0 auto;
 }
+
 .subscribe-intro {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin-bottom: 54px;
 }
+
 .email {
     display: flex;
     justify-content: center;
@@ -240,6 +335,7 @@ ul {
     gap: 0;
     width: 100%;
 }
+
 .email-input {
     width: 452px;
     height: 25px;
@@ -260,25 +356,35 @@ ul {
     border-radius: 0 4px 4px 0;
     border: none;
 }
+
 .button-blue-filter {
-   border-radius: 4px;
-   background-color: #82B3D3;
-   color: #fff;
+    border-radius: 4px;
+    background-color: #82B3D3;
+    color: #fff;
 }
+
 .button-transparent {
     background-color: transparent;
-    color:#FFFFFF;
+    color: #FFFFFF;
     border-radius: 4px;
 }
+.footer-wrapper {
+    height: 120px;
+    padding: 0 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+    flex-wrap: nowrap;
+
+}
+
 .footer-contacts-list {
     display: flex;
     justify-content: space-between;
-    width: 142px;
 }
-.telephone a{
-    display: flex;
-    align-items: start;
-    justify-content: center;
+
+.telephone a {
     font-family: "PT Sans", sans-serif;
     font-size: 40px;
     font-weight: 400;
@@ -286,8 +392,4 @@ ul {
     line-height: 40px;
     text-decoration: none;
     color: black;
-}
-.htmlacademy {
-    display: flex;
-    justify-content: end;
 }
