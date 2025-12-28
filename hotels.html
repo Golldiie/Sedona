@@ -10,7 +10,6 @@
 <body>
   <header class="page-header">
     <nav class="navigation">
-      <div class="header-wrapper">
       <img class="logo" alt="logo-sedona" src="images/header/logo.svg">
       <ul class="navigation-list">
         <li class="navigation-item"><a class="navigation-link" href="index.html">Главная</a></li>
@@ -28,11 +27,10 @@
         </li>
         <li class="navigation-item"><a class="button button-brown" href="#">Хочу сюда!</a>
       </ul>
-      </div>
     </nav>
   </header>
   <main class="main-inner">
-    <section class="hotels-catalog">
+    <section class="hotel-catalog-filter">
       <div class="hotels">
         <h1 class="inner-header white">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
@@ -48,6 +46,7 @@
         </li>
       </ul>
       <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
+        <div class="catalog-filter-group-container">
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-group-title">Инфраструктура</legend>
           <ul class="catalog-filter-list">
@@ -82,35 +81,46 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="catalog-filter-group">
+        </div>
+        <div class="catalog-filter-group-wrapper">
+        <fieldset class="catalog-filter-group-price">
           <legend class="catalog-filter-group-title">Стоимость, ₽</legend>
           <input type="number" value="0">
           <input type="number" value="9000">
           <!--range slider-->
           </fieldset>
+          <div class="catalog-filter-button">
           <button class="button button-blue-filter" type="submit">Применить</button>
           <button class="button button-transparent" type="button">Сбросить</button>
+          </div>
+          </div>
 
       </form>
       </div>
-      <p class="search">Найдено гостиниц:</p>
+    </section>
+      <section class="hotel-catalog">
+        <div class="hotel-catalog-result">
+      <p class="search-result">Найдено гостиниц:</p>
       <select class="select-control" aria-label="Сортировка">
         <option value="popular">Сначала популярные</option>
         <option value="cheap">Сначала дешевые</option>
         <option value="expensive">Сначала дорогие</option>
       </select>
-      <a href="#" class="button-square white">
+      <ul class="hotel-catalog-view-list">
+      <li class="hotel-catalog-view-item"><a href="#" class="button-square white">
         <img src="images/variant=tile.svg">
         <span class="visually-hidden">Показать сетку</span>
-      </a>
-      <a href="#" class="button-square white">
+      </a></li>
+      <li class="hotel-catalog-view-item"><a href="#" class="button-square white">
         <img src="images/variant=slideshow.svg">
         <span class="visually-hidden">Показать слайд-шоу</span>
-      </a>
-      <a href="#" class="button-square white">
+      </a></li>
+      <li class="hotel-catalog-view-item"><a href="#" class="button-square white">
         <img src="images/variant=list.svg">
         <span class="visually-hidden">Показать список</span>
-      </a>
+      </a></li>
+      </ul>
+        </div>
       <ul class="hotels-list">
         <li class="hotels-list-item">
           <div class="hotel-card">
@@ -120,7 +130,7 @@
               <p class="hotel-card-type">Гостиница</p>
               <b class="hotel-card-price">От 4000 ₽</b>
             </a>
-            <a class="button button-brown" href="Amara.html">Подробнее</a>
+            <a class="button button-brown-full" href="Amara.html">Подробнее</a>
             <button class="button button-blue-filter" type="submit">В избранное</button>
             <a title="4-х звёздочная">
               <img class="hotel-star" src="images/card/star 2.svg" alt="Звезда">
@@ -139,7 +149,7 @@
               <p class="hotel-card-type">Гостиница</p>
               <b class="hotel-card-price">От 5000 ₽</b>
             </a>
-            <a class="button button-brown" href="villas.html">Подробнее</a>
+            <a class="button button-brown-full" href="villas.html">Подробнее</a>
             <button class="button button-blue-filter" type="submit">В избранное</button>
             <a title="4-х звёздочная">
               <img class="hotel-star" src="images/card/star 2.svg" alt="Звезда">
@@ -158,7 +168,7 @@
               <p class="hotel-card-type">Гостиница</p>
               <b class="hotel-card-price">От 2500 ₽</b>
             </a>
-            <a class="button button-brown" href="Desert.html">Подробнее</a>
+            <a class="button button-brown-full" href="Desert.html">Подробнее</a>
             <button class="button button-blue-filter" type="submit">В избранное</button>
             <a title="4-х звёздочная">
               <img class="hotel-star" src="images/card/star 2.svg" alt="Звезда">
@@ -176,7 +186,7 @@
               <p class="hotel-card-type">Гостиница</p>
               <b class="hotel-card-price">От 1500 ₽</b>
             </a>
-            <a class="button button-brown" href="greentree.html">Подробнее</a>
+            <a class="button button-brown-full" href="greentree.html">Подробнее</a>
             <button class="button button-blue-filter" type="submit">В избранное</button>
             <a title="4-х звёздочная">
               <img class="hotel-star" src="images/card/star 2.svg" alt="Звезда">
@@ -233,7 +243,7 @@
         <button class="button button-blue" type="submit">Подписаться</button>
       </form>
     </section>
-    <div class="footer-wrapper">
+    <div class="page-footer-container">
     <section class="footer-contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <ul class="footer-contacts-list">

@@ -6,11 +6,9 @@
   <title>Туристический город Седона</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<!--Поиграть с ::before ::after -->
 <body>
   <header class="page-header">
     <nav class="navigation">
-      <div class="header-wrapper">
       <img class="logo" alt="logo-sedona" src="images/header/logo.svg">
       <ul class="navigation-list">
         <li class="navigation-item"><a class="navigation-link-current" href="index.html">Главная</a></li>
@@ -28,15 +26,13 @@
         </li>
         <li class="navigation-item"><a class="button button-brown" href="#">Хочу сюда!</a>
       </ul>
-      </div>
     </nav>
   </header>
-  <main>
+  <main class="main-container">
     <div class="welcome">
-      <!--Переделать сетку: убрать лишние классы, а в css сделать через nth-of-type + only-child(?)-->
-      <img class="decor-welcome" src="images/main-pic/welcome.svg" alt="Добро пожаловать" width="187.7px"; height="44.7px";><br>
-       <img class="welcome-welcome" src="images/main-pic/gorgeous.svg" alt="В очаровательную" width="256px" height="28.78px"><br>
-      <img class="decor-welcome" src="images/main-pic/sedona.svg" alt="Седону!" width="456.7" height="212.77"><br>
+      <img src="images/main-pic/welcome.svg" alt="Добро пожаловать" width="187.7px"; height="44.7px";>
+       <img src="images/main-pic/gorgeous.svg" alt="В очаровательную" width="256px" height="28.78px">
+      <img src="images/main-pic/sedona.svg" alt="Седону!" width="456.7" height="212.77">
     </div>
     <img class="divider" src="images/main-pic/divider.svg">
     <section class="introduction">
@@ -47,18 +43,18 @@
     <section class="reasons">
       <h2 class="visually-hidden">Причины поехать</h2>
       <ul class="reasons-list">
-        <li class="reasons-item blue-square">
+        <li class="reasons-item">
           <h3 class="reasons-title title-white" id="about-sedona">Настоящий городок</h3>
           <p class="reasons-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
         </li>
         <li class="reasons-item">
-          <img src="images/photo-1.jpg" alt="Бар Седоны" width="800" height="385">
+          <img src="images/photo-1.jpg" alt="Бар Седоны" width="100%" height="100%">
         </li>
         <li class="reasons-item">
           <h3 class="reasons-title">Небольшая площадь</h3>
           <p class="reasons-description">Все достопримечательности находятся очень близко</p>
         </li>
-        <li class="reasons-item light-blue-square">
+        <li class="reasons-item">
           <h3 class="reasons-title">Красивая дорога</h3>
           <p class="reasons-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
@@ -67,9 +63,9 @@
           <p class="reasons-description">Большинство едет в Гранд Каньон и толпится там</p>
         </li>
         <li class="reasons-item">
-          <img src="images/photo-2.jpg" alt="Пейзаж Седоны" width="800" height="385">
+          <img src="images/photo-2.jpg" alt="Пейзаж Седоны" width="100%" height="100%">
         </li>
-        <li class="reasons-item blue-square">
+        <li class="reasons-item">
           <h3 class="reasons-title title-white">Мост дьявола!</h3>
           <p class="reasons-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
         </li>
@@ -79,7 +75,6 @@
       <p class="intro-big-text">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</p>
       <p class="intro-small-text">Опытный персонал и качественное обслуживание</p>
     </section>
-    <!--Переделать сетку: убрать лишние классы, а в css сделать через nth-of-type-->
     <section class="advantages">
       <h2 class="visually-hidden">Что мы предлагаем</h2>
       <ul class="advantages-list">
@@ -119,7 +114,7 @@
         <button class="button button-blue" type="submit">Подписаться</button>
       </form>
     </section>
-    <div class="footer-wrapper">
+    <div class="page-footer-container">
     <section class="footer-contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <ul class="footer-contacts-list">
