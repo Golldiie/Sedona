@@ -102,11 +102,7 @@ ul {
 .button-brown {
     background-color: #756157;
     color: #FFFFFF;
-    border-radius: 4px;
     width: 160px;
-    font-size: 16px;
-    line-height: 20px;
-    height: 36px;
     padding: 8px 16px;
 }
 .page-header {
@@ -355,7 +351,14 @@ ul {
 }
 .introduction {
   width: 100%;
-  padding: 69px 0;
+  padding: 65px 0;
+}
+.introduction-container {
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .intro-big-text {
@@ -484,8 +487,9 @@ ul {
     background-color: #756157;
     color: #FFFFFF;
     box-sizing: border-box;
-    display: block;
-    margin: 55px auto 25px auto;
+    padding: 8px 50px;
+    margin-top: 55px;
+
 }
 
 .introduction-hotels {
