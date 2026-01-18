@@ -738,12 +738,23 @@ button-brown:disabled {
     text-transform: uppercase;
     margin: 0;
 }
+
+.advantages-title {
+  margin-bottom: 30px;
+}
+
+.reasons-title {
+  padding-bottom: 30px;
+  position: relative;
+}
+
 .reasons-title::after {
     content: "";
     display: block;
     height: 2px;
     width: 60px;
-    margin: 30px auto;
+    bottom: 0;
+    margin: 30px auto 0;
     background-color: rgba(0,0,0,0.3);
 }
 .title-white::after {
