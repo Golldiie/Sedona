@@ -96,17 +96,22 @@
         <div class="catalog-filter-group-wrapper">
         <fieldset class="catalog-filter-group-price">
           <legend class="catalog-filter-group-title">Стоимость, ₽</legend>
-          <div class="slider-container">
+          <div class="range-wrapper-inputs">
           <label class="price-field">
-          <input class="slider" type="number" value="0">
-          <span class="slider-mark"></span>
+          <input class="range-input" type="number" value="0" name="min-price">
+          <span class="range-input-mark range-mark--from"></span>
           </label>
           <label class="price-field">
-          <input class="slider" type="number" value="9000">
-          <span class="slider-mark"></span>
+          <input class="range-input" type="number" value="9000" name="max-price">
+          <span class="range-input-mark range-mark--to"></span>
           </label>
           </div>
-          <!--range slider-->
+          <div class="range-scale">
+            <div class="range-bar" style="left: 0; width: 226px;">
+              <button type="button" class="range-toggle range-toggle-min"></button>
+              <button type="button" class="range-toggle range-toggle-max"></button>
+            </div>
+          </div>
           </fieldset>
           <div class="catalog-filter-button">
           <button class="button button-blue-filter" type="submit">Применить</button>
@@ -119,13 +124,15 @@
     </section>
       <section class="hotel-catalog">
         <div class="hotel-filter-result">
-      <p class="search-result">Найдено гостиниц: 38</p>
-      <select class="select-control" aria-label="Сортировка">
-        <span class="select-control-mark"></span>
-        <option value="popular">Сначала популярные</option>
-        <option value="cheap">Сначала дешевые</option>
-        <option value="expensive">Сначала дорогие</option>
-      </select>
+          <p class="search-result">Найдено гостиниц: 38</p>
+          <div class="sorting-container">
+              <div class= "select sorting-type">
+                <select class="select-control" aria-label="Сортировка">
+                  <option value="popular">Сначала популярные</option>
+                  <option value="cheap">Сначала дешевые</option>
+                  <option value="expensive">Сначала дорогие</option>
+                </select>
+              </div>
       <ul class="hotel-catalog-view-list">
       <li class="hotel-catalog-view-item">
         <a href="#" class="hotel-catalog-view-link">
@@ -144,6 +151,7 @@
           <path fill="#000" d="M4 3H2v2h2V3ZM18 3H6v2h12V3ZM4 7H2v2h2V7ZM18 7H6v2h12V7ZM4 11H2v2h2v-2ZM18 11H6v2h12v-2ZM4 15H2v2h2v-2ZM18 15H6v2h12v-2Z"/></svg>
       </a></li>
       </ul>
+      </div>
         </div>
       <ul class="hotels-list">
         <li class="hotel-card">
@@ -155,7 +163,7 @@
               <p class="hotel-card-type">Гостиница</p>
               <b class="hotel-card-price">От 4000 ₽</b>
             <a class="button button-brown-full" href="Amara.html">Подробнее</a>
-            <button class="button button-blue-filter" type="submit">В избранное</button>
+            <button class="button button-blue-like" type="submit">В избранное</button>
             <a title="4-х звёздочная">
               <img class="hotel-star" src="images/card/star 2.svg" alt="Звезда">
               <img class="hotel-star second" src="images/card/star 2.svg" alt="Звезда">
